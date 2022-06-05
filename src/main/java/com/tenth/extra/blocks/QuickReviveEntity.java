@@ -158,7 +158,7 @@ public class QuickReviveEntity extends BlockEntity implements MenuProvider
         for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
             inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
         }
-        
+
         Optional<QuickReviveRecipe> match = level.getRecipeManager()
                 .getRecipeFor(QuickReviveRecipe.Type.INSTANCE, inventory, level);
 
