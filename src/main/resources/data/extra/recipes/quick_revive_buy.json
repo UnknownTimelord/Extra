@@ -1,0 +1,11 @@
+{
+  "type": "extra:quick_buy",
+  "ingredients": [
+    {
+      "item": "extra:essence"
+    }
+  ],
+  "output": {
+    "item": "extra:essence"
+  }
+}

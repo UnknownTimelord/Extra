@@ -1,0 +1,30 @@
+{
+  "quick_revive_jingle": {
+    "category": "blocks",
+    "subtitle": "extra.quick_revive_jingle",
+    "sounds": [
+      "extra:quick_revive_jingle"
+    ]
+  },
+  "quick_revive_sting": {
+    "category": "blocks",
+    "subtitle": "extra.quick_revive_sting",
+    "sounds": [
+      "extra:quick_revive_sting"
+    ]
+  },
+  "hum_loop": {
+    "category": "blocks",
+    "subtitle": "extra.hum_loop",
+    "sounds": [
+      "extra:hum_loop"
+    ]
+  },
+  "zombie_laugh": {
+    "category": "blocks",
+    "subtitle": "extra.zombie_laugh",
+    "sounds": [
+      "extra:zombie_laugh"
+    ]
+  }
+}
