@@ -1,14 +1,10 @@
 package com.tenth.extra.events;
 
 import com.tenth.extra.Extra;
-import com.tenth.extra.recipe.QuickReviveRecipe;
-import net.minecraft.core.Registry;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -30,10 +26,5 @@ public class ModClientEvents
     @SubscribeEvent
     public void registerCaps(RegisterCapabilitiesEvent event) {
 
-    }
-
-    @SubscribeEvent
-    public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event) {
-        Registry.register(Registry.RECIPE_TYPE, QuickReviveRecipe.Type.ID, QuickReviveRecipe.Type.INSTANCE);
     }
 }

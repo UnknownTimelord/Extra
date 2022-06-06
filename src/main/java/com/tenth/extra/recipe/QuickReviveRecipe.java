@@ -27,17 +27,17 @@ public class QuickReviveRecipe implements Recipe<SimpleContainer> {
     }
 
     @Override
-    public boolean matches(SimpleContainer simpleContainer, Level level) {
-        return recipeItems.get(0).test(simpleContainer.getItem(1));
+    public boolean matches(SimpleContainer pContainer, Level pLevel) {
+        return recipeItems.get(0).test(pContainer.getItem(1));
     }
 
     @Override
-    public ItemStack assemble(SimpleContainer simpleContainer) {
+    public ItemStack assemble(SimpleContainer pContainer) {
         return output;
     }
 
     @Override
-    public boolean canCraftInDimensions(int width, int height) {
+    public boolean canCraftInDimensions(int pWidth, int pHeight) {
         return true;
     }
 

@@ -162,7 +162,7 @@ public class QuickReviveEntity extends BlockEntity implements MenuProvider
         Optional<QuickReviveRecipe> match = level.getRecipeManager()
                 .getRecipeFor(QuickReviveRecipe.Type.INSTANCE, inventory, level);
 
-        LogUtils.getLogger().info("found recipe: " + match.isPresent());
+        LogUtils.getLogger().info("match.isPresent() = " + match.isPresent() + "\nmatch = " + match);
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
                 && canInsertItemIntoOutputSlot(inventory, match.get().getResultItem());
